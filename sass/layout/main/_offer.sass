@@ -1,0 +1,34 @@
+@import '../../core'
+  
+.offer
+  padding-top: $padding-top-section
+
+.offer__card-list
+  display: flex
+  flex-direction: column
+  gap: 120px
+
+.offer__card
+  display: flex
+  align-items: center
+  gap: 60px
+
+.offer__card:nth-child(even)
+  flex-direction: row-reverse  
+
+.offer__card-image,
+.offer__card-text
+  width: 570px
+
+.offer__card-heading
+  @include heading-h3
+  color: $grey
+  padding-bottom: 20px
+
+.offer__card-text
+  @include text
+  padding-bottom: 60px
+
+.offer__card-button
+  @include text-button
+  @include dark-button

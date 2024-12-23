@@ -1,0 +1,24 @@
+@forward 'typography'
+
+$white: #fff
+$grey: #838383
+$dark-grey: #1d1d1f
+
+$padding-top-section: 190px
+
+
+@mixin button-size
+  width: 180px
+  height: 60px
+
+@mixin light-button
+  @include button-size
+  background-color: $white
+  border: none
+  color: $dark-grey
+
+@mixin dark-button
+  @include button-size
+  background-color: $dark-grey
+  border: none
+  color: $white

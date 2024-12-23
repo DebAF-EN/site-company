@@ -1,0 +1,65 @@
+@import '../core' 
+  
+.footer
+  background-color: $dark-grey
+  height: 400px
+  margin-top: $padding-top-section
+
+.footer__container
+  max-width: 1200px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  padding-top: 90px
+
+.footer__logo
+  @include heading-h2
+  color: $white
+
+.footer__address
+  @include text
+  color: $grey
+  padding-top: 48px
+
+.footer__icons
+  padding-top: 30px
+  display: flex
+  gap: 20px
+
+.footer__form
+  flex-basis: 570px
+
+.footer__input-wrapper
+  position: relative  
+
+.footer__label
+  @include heading-h2
+  color: $white
+
+.footer__input
+  position: relative
+  @include text-input
+  width: 100%
+  background: transparent
+  color: $white
+  border: none
+  border-bottom: 1px solid $grey
+  padding-bottom: 24px
+  margin-top: 30px
+
+.footer__button
+  position: absolute
+  right: 0
+  bottom: 20px
+  background: transparent
+  border: none
+  cursor: pointer
+  width: 24px
+  aspect-ratio: 1
+
+.footer__input:focus
+  outline: none
+
+.footer__input::placeholder
+  @include text-input
+  text-transform: uppercase  

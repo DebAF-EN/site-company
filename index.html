@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="./js/video.js" defer></script>
+  <script src="./js/slider.js" defer></script>
+</head>
+<body>
+  <main class="main main--container">
+    <section class="hero">
+      <header class="header">
+        <h1 class="header__logo ">Company</h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link"><span class="header__nav-icon-search"></span></a>
+            </li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Portfolio</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Team</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="./images/hero-cover.jpg" alt="a massive grey building with curved balconies" class="hero__image" loading="lazy">
+      <div class="hero__content">
+        <h2 class="hero__heading">We produce<br>the best products</h2>
+        <p class="hero__text">Mattis quam, lectus et justo amet, tortor, lectus dapibus est.<br>Habitasse efficitur sodales vel est.</p>
+        <button class="hero__button" type="button">Button</button>
+      </div>
+    </section>
+    <section class="milestone">
+      <div class="milestone__content-wrapper">
+        <ul class="milestone__list">
+          <li class="milestone__item">
+            <span class="milestone__number">20,000</span>
+            <p class="milestone__text milestone__text--gray">completed projects</p>
+          </li>
+          <li class="milestone__item">
+            <span class="milestone__number">10,000</span>
+            <p class="milestone__text milestone__text--gray">prototypes</p>
+          </li>
+          <li class="milestone__item">
+            <span class="milestone__number">347</span>
+            <p class="milestone__text milestone__text--gray">completed projects</p>
+          </li>
+        </ul>
+        <div class="milestone__block-text">
+          <p class="milestone__text milestone__text--big">Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum.</p>
+          <p class="milestone__text">Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et vitae quam, sed nulla dapibus venenatis odio.</p>
+          <p class="milestone__text">Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et quam, ultricies. Dictum. Ipsum sodales sit id nec sed sodales mattis mollis quis, pellentesque habitasse ex.</p>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="video__container">
+        <video poster="images/video-poster.jpg" src="video/test-video.mp4" muted controls>
+        </video>
+        <div class="video__custom-controls">
+          <button class="video__play-button"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="white"/>
+            <path d="M63 50L44.25 62.9904L44.25 37.0096L63 50Z" fill="#1D1D1F"/>
+            </svg></button>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <ul class="offer__content-list">
+        <li class="offer__card">
+          <div class="offer__card-text">
+            <h3 class="offer__card-heading">Et odio</h3>
+            <p class="offer__card-text">Mauris eget nec nulla dolor ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed consectetur quam, est. Libero, odi</p>
+            <button class="offer__card-button">Button</button>
+          </div>
+          <img src="./images/offer-image-1.jpg" loading="lazy" alt="a rounded building with many holes" class="offer__card-image">
+        </li>
+        <li class="offer__card">
+          <div class="offer__card-text">
+            <h3 class="offer__card-heading">Integer dapibus dictum</h3>
+            <p class="offer__card-text">it pulvinar tempus amet dolor dui vulputate tortor, luctus lorem in nunc eleifend ipsum justo et venenatis dictumst.</p>
+            <button class="offer__card-button">Button</button>
+          </div>
+          <img src="./images/offer-image-2.jpg" loading="lazy" alt="part of the orange bridge" class="offer__card-image">
+        </li>
+      </ul>
+    </section>
+    <section class="quote">
+      <p class="quote__text">Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies. Sapien est. Dictumst. Sapien habitasse interdum in amet, lectus molestie vel ut. Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. </p>
+      <p class="quote__caption">Alex Lee / <span class="quote__caption--grey">Co-founder & SEO</span></p>
+    </section>
+    <section class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__content">
+          <div class="slider__slides">
+            <div class="slider__slide"><img src="./images/silder-image-1.jpg" alt="Orange and blue house with black balconies" loading="lazy"></div>
+            <div class="slider__slide"><img src="./images/silder-image-2.jpg" alt="a look from below at the skyskraper" loading="lazy"></div>
+            <div class="slider__slide"><img src="./images/silder-image-3.jpg" alt="a look from below at the skyskraper" loading="lazy"></div>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__button slider__button-previous" type="button"><img src="./icons/arrow.svg" alt="previous"></button>
+            <button class="slider__button slider__button-next" type="button"><img src="./icons/arrow.svg" alt="next"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <ul class="services__content-list">
+        <hr>
+        <li class="services__block">
+          <h2 class="services__heading">Branding</h2>
+          <p class="services__text">Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p>
+        </li>
+        <hr>
+        <li class="services__block">
+          <h2 class="services__heading">Web-apps</h2>
+          <p class="services__text">Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie ex.</p>
+        </li>
+        <hr>
+        <li class="services__block">
+          <h2 class="services__heading">Design</h2>
+          <p class="services__text">Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex. Aenean ipsum dolor augue tempus et molestie ipsum adipiscing leo, sit interdum venenatis odio.</p>
+        </li>
+        <hr>
+        <li class="services__block">
+          <h2 class="services__heading">Strategy</h2>
+          <p class="services__text">Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <h2 class="footer__logo">Company</h2>
+        <p class="footer__address">Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</p>
+        <ul class="footer__icons">
+          <li class="footer__icon">
+            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+          </li>
+          <li class="footer__icon">
+            <a href="#"><img src="./icons/telegram.svg" alt=""></a>
+          </li>
+          <li class="footer__icon">
+            <a href="#"><img src="./icons/google.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <form action="" class="footer__form">
+        <label for="email" class="footer__label">Id sodales interdum dui mollis non in odio</label>
+        <div class="footer__input-wrapper">
+          <input type="email" name="email"  id="email" class="footer__input" placeholder="e-mail" required>
+          <button class="footer__button" type="submit"><img src="icons/footer-input-arrow.svg" alt="Send form"></button>
+        </div>
+      </form>
+    </div>
+  </footer>
+</body>
+</html>

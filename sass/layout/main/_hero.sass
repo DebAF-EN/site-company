@@ -1,0 +1,27 @@
+@import '../../core'
+
+.hero
+  height: 100vh
+
+.hero__image
+  position: absolute
+  inset: 0
+  width: 100%
+  height: 100%
+  object-fit: cover 
+  z-index: -1
+
+.hero__heading
+  @include heading-h1
+  color: $white
+  padding-top: 150px
+
+.hero__text
+  @include text
+  color: $white
+  padding-top: 30px
+
+.hero__button
+  @include text-button
+  @include light-button
+  margin-top: 50px

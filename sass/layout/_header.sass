@@ -1,0 +1,27 @@
+@import '../core' 
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-block: 40px
+
+.header__logo
+  @include heading-h2
+  color: $white
+
+.header__nav-list
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 35px
+
+.header__nav-link
+  @include text-link
+  color: $white
+
+.header__nav-icon-search
+  display: inline-block
+  width: 24px
+  height: 24px
+  background-image: url('../../icons/search.svg')
